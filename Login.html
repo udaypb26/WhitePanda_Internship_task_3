@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Writer Login</title>
+	<!--All CSS Links-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!--Google Font style imported!-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Auto Scale On!-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="scripts/angular-route.min.js"></script>
+ 	<!--main js file-->
+ 	<script src="scripts/app.js"></script>
+
+	<!--Style-->
+	<style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+     main {
+      flex: 1 0 auto;
+    }
+
+    .input-field input[type=email]:focus + label,         /*focus effect and red color for validation*/
+    .input-field input[type=password]:focus + label {
+      color: #e91e63;
+    }
+
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {			  /*focus and green effect after data fill*/
+      border-bottom: 2px solid #e91e63;
+      box-shadow: none;
+    }
+    </style>
+
+</head>
+<body ng-app="mainApp">
+<main>
+	<center>
+		<div ng-show="error" class="alert alert-danger">{{error}}</div>
+		<div class="container" style="padding-top: 20%">
+			<!--mai login card started-->
+    		<div class="z-depth-1 grey lighten-4 row col s8" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE">
+
+    	<h5 class="indigo-text">Writer</h5>		
+    	<div ng-view></div>
+
+    	<section>
+    		
+    	</section>
+
+    	</div>
+    	</div>
+    </center>
+</main>
+
+
+<!--Materialize Jquery scripts!-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+ <!--angular scripts-->
+ 
+ 
+
+</body>
+</html>
+

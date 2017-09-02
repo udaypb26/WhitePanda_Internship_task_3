@@ -1,0 +1,19 @@
+body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+     main {
+      flex: 1 0 auto;
+    }
+
+    .input-field input[type=email]:focus + label,         /*focus effect and red color for validation*/
+    .input-field input[type=password]:focus + label {
+      color: #e91e63;
+    }
+
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {			  /*focus and green effect after data fill*/
+      border-bottom: 2px solid #e91e63;
+      box-shadow: none;
+    }
